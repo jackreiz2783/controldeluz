@@ -10,8 +10,8 @@ const int relayPin = 5; // Cambia esto al pin que estás usando para controlar l
 SSD1306Wire display(0x3C, SDA, SCL);
 
 // Configuración de WiFi
-const char *ssid = "INFINITUM598F"; // Nombre de tu red WiFi
-const char *password = "#FamBelau:3UwU1951"; // Contraseña de tu red WiFi
+const char *ssid = "RED WIFI"; // Nombre de tu red WiFi
+const char *password = "CONTRASEÑA DE LA RED WIFI"; // Contraseña de tu red WiFi
 
 // Configuración de IP estática
 IPAddress local_ip(192, 168, 1, 100);   // Dirección IP estática
