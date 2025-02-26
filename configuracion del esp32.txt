@@ -1,0 +1,22 @@
+Para encontrar la configuracion del router es en ipconfig en cmd y en
+ puerta de enlace predeterminada esta la ip, esta ip se pone en la red 
+del cliente para configurar el reenvio de puertos.
+
+En el codigo arduino tiene la direccion estatica( se puede cambiar)
+que va estar usando y el puerto que lanza tambien en el codigo arduino 
+especifica ssid y el password esto es independiente de cada wifi 
+para que el esp32 se conecte al wifi que tiene internet como puente;
+
+Configura el reenvío de puertos:
+
+Busca una opción llamada Port Forwarding o Reenvío de puertos.
+Configura el puerto 80 (puerto por defecto del servidor web en el ESP32) para que se redirija a la IP estática del ESP32 (en tu caso, 192.168.1.100).
+Asegúrate de habilitar el reenvío para puerto TCP 80.
+Obten la IP pública de tu red:
+
+Usa un servicio como WhatIsMyIP para obtener tu IP pública.
+Accede remotamente:
+
+Desde cualquier lugar fuera de tu red local, puedes ingresar la IP pública de tu red en tu navegador, seguido del puerto configurado. Por ejemplo:
+
+http://[IP pública]:80
